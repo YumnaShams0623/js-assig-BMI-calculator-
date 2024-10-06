@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,14 +8,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('./images.jpeg'); /* Add your image path */
+    background-image: url('./images.jpeg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
 }
 
-/* Overlay to add low opacity to the background */
+
 body::before {
     content: '';
     position: absolute;
@@ -23,11 +23,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6); /* White overlay with opacity */
-    z-index: -1;
+    background-color: #2e1c1c99; 
+    z-index: -3;
 }
 
-.container {
+.main-container {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -47,8 +47,8 @@ h1 {
     animation: textBorderColorPulse 5s infinite, textShadowPulse 5s infinite;
 }
 
-/* Input field and button styles */
-.input-fields {
+
+.input-box{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -132,10 +132,9 @@ button:hover {
     }
 }
 
-/* Keyframes for animated border and shadow */
 @keyframes borderColorPulse {
     0%, 100% {
-        border: 4px solid #ff5733; /* Start and end color */
+        border: 4px solid #ff5733;
     }
     25% {
         border: 4px solid #33ff57;
@@ -163,24 +162,9 @@ button:hover {
     }
 }
 
-@keyframes textBorderColorPulse {
-    0%, 100% {
-        border-bottom: 4px solid #ff5733;
-    }
-    25% {
-        border-bottom: 4px solid #33ff57;
-    }
-    50% {
-        border-bottom: 4px solid #3357ff;
-    }
-    75% {
-        border-bottom: 4px solid #ff33aa;
-    }
-}
-
 @keyframes textShadowPulse {
     0%, 100% {
-        text-shadow: 2px 2px 10px #ff5733;
+        text-shadow: 2px 2px 6px #ff5733;
     }
     25% {
         text-shadow: 2px 2px 10px #33ff57;
