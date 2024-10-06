@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-container">
-        <h1>BMI Calculator</h1>
-        <div class="input-box">
-            <label for="weight">Weight (kg):</label>
-
-            <input type="number" id="weight" placeholder="Enter your weight" step="any" min="0">
-            
-            <label for="height">Height (m):</label>
-            <input type="number" id="height" placeholder="Enter your height" step="any" min="0">
-            
-            <button id="calculateBtn">Calculate BMI</button>
+    <!-- Navbar with Gradient Background -->
+    <nav class="navbar">
+        <h1>Body Mass Index Calculator</h1>
+    </nav>
+    
+    <!-- Main content container for the input fields and button -->
+    <div class="content-container">
+        <div class="container">
+            <div class="input-fields">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter your weight" step="any" min="0">
+                
+                <label for="height">Height (m):</label>
+                <input type="number" id="height" placeholder="Enter your height" step="any" min="0">
+                
+                <button id="calculateBtn">Calculate BMI</button>
+            </div>
+            <div id="result"></div>
         </div>
-      
     </div>
     
     <script src="script.js"></script>
