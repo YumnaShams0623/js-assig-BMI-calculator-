@@ -1,6 +1,9 @@
-function calculateBmi() {
-    var weight = document.getElementById('weight').value;
-    var height = document.getElementById('height').value;
-    var result = weight / (height * height);
-    alert(result) 
+
+function calculateBMI() {
+    
+    var height = document.getElementById("height").value;
+    var weight = document.getElementById("weight").value;
+    var bmi = weight / (height * height);
+    var result = document.getElementById("result");
+    result.innerHTML = "Your BMI is " + bmi.toFixed(2);
 }
